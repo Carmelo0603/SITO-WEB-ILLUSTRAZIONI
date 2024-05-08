@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'Chillax Variable';
+    src: url(Chillax-Variable.ttf);
+    src: local('Chillax-Variable'), url('Chillax-Variable.ttf') format('truetype');
+}
+
+body{
+    background-color: #FFF9E8;
+    margin: 0;
+    font-family: "Chillax Variable";
+
+
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+header,footer{
+    display: flex;
+    margin: 34px 2% 0 2%;
+    border: 7px solid #000;
+    width: auto;
+}
+
+.sito{
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    margin: auto auto auto 41px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+header nav ul, footer nav ul{
+    display: flex;
+    list-style: none;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    
+    
+}
+
+header li {
+    margin: auto 68px auto 0;
+    font-weight: bold;
+}
+
+.home, .artisti, .mostra, .info {
+    text-decoration: none;
+    color: #000; 
+}
+
+.titolosito{
+
+    color: #000;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100%; 
+    padding-top: 68px;
+}
+
+div.info-gen{
+    
+    justify-content: center;
+    display: flex;
+    gap: 120px;
+    font-size: 32px;
+    padding-top: 5%;
+    
+    
+}
+
+h3.ora, h3.data, h3.luogo{
+    color: #000;
+    border: 7px solid #000;
+    padding: 12px 24px;
+    
+}
+
+
+div.info-home p{
+    width: auto;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    padding-right: 10%;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+img.imm1, img.imm2{
+    width: 40%;
+    height: 600px;
+    margin: 0 2% 0 0;
+    
+}
+
+div.testo-imm{
+    display: flex;
+    margin-left: 2%;
+
+}
+
+h2, a.artisti-titolo{
+    color: #000;
+    border: 7px solid #000;
+    padding: 12px 24px;
+    text-align: center;
+    width: 10%;
+    
+}
+
+.contenitore1{
+    margin-top: 0%
+}
+
+.nomi-artisti{
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+.attivita-home{
+
+    padding-top: 5%;
+}
+
+h3.laboratorio-home{
+
+    font-size: 36px;
+    
+}
+
+p.testo-lab{
+    font-size: 20px;
+    
+}
+
+footer{
+    margin: 34px 2% 34px 2%;
+    
+}
+
+footer nav ul li a{
+    color: #000;
+    margin: auto 60px auto 0;
+
+}
+
+.titolo-artisti{
+    color: #000;
+    text-align: center;
+    font-family: "Chillax Variable";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+div.elenco-artisti nav ul li{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.riga-a{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    
+    margin: 90px 0 0 10%;
+}
+
+.riga-b{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    
+    margin: 90px 0 90px 11%;
+}
+
+.riga-c{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 0 90px 9%;
+}
+
+.elenco-artisti a{
+    font-size: 32px;
+    font-weight: bold;
+    border: 7px solid #000;
+    text-align: center;
+    padding: 12px 24px;
+}
+
+div.icinori-testo p{
+    margin: 10% 20% 10%;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+}
+
+div.foto-icinori, div.foto-mander{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 15px;
+    margin: 0 2% 0;
+
+}
+div.foto-icinori img, div.foto-mander img, div.foto-mostra img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+}
+div.foto-mostra img{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+ h3.laboratorio-info{
+    margin: 0 2% 0;
+    font-size: 36px;
+    
+ }
+
+ 
+ .elenco-info a{
+    font-size: 32px;
+    font-weight: bold;
+    border: 7px solid #000;
+    padding: 12px 24px;
+    list-style: none;
+    
+ }
+
+ .info-1{
+    width: 100%;
+    justify-content: center;
+    
+    
+ }
+
+ @media (max-width: 768px) {
+    .titolosito, .titolo-artisti {
+        font-size: 48px;
+    }
+
+    div.info-gen {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    img.imm1, img.imm2 {
+        width: 100%;
+        height: auto;
+    }
+
+    div.testo-imm, .riga-a, .riga-b, .riga-c {
+        flex-direction: column;
+        align-items: center;
+        margin: 2%;
+    }
+
+    h3.ora, h3.data, h3.luogo, h2, a.artisti-titolo, .elenco-artisti a {
+        width: auto;
+        padding: 12px;
+    }
+
+    header, footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .titolosito, .titolo-artisti {
+        font-size: 32px;
+    }
+
+    .sito, div.info-gen p, p.testo-lab, div.icinori-testo p, .nomi-artisti, .elenco-info a {
+        font-size: 18px;
+    }
+
+    header, footer {
+        justify-content: center;
+        padding: 10px 1%;
+        margin: 10px 1%;
+    }
+
+    div.info-gen, .riga-a, .riga-b, .riga-c {
+        gap: 10px;
+    }
+
+    h3.ora, h3.data, h3.luogo, h2, a.artisti-titolo, .elenco-artisti a {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    img.imm1, img.imm2 {
+        height: auto;
+    }
+
+    header nav ul li a{
+        padding: 5px;
+    }
+}
